@@ -1,0 +1,71 @@
+<Window xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d" Width="1000" Height="530"
+             x:Class="GetStartedApp.MainWindow"
+             Title="GetStartedApp"
+	            CanResize="False">
+
+    <Window.Styles>
+		<Style Selector="TextBlock">
+			<Setter Property="Margin" Value="5"></Setter>
+			<Setter Property="Foreground" Value="Black"></Setter>
+			<Setter Property="FontWeight" Value="Medium"></Setter>
+		</Style>
+		
+	</Window.Styles>
+
+
+  <Grid ShowGridLines="False"
+        RowDefinitions="auto,auto"
+        ColumnDefinitions="3*,*"
+        Background="#0f2f34">
+                
+    <DockPanel Grid.Row="0"
+				   Grid.ColumnSpan="2"
+				   Background="White">
+        <TextBlock>Home</TextBlock>
+        <TextBlock>About</TextBlock>
+        <TextBlock>Blog's Main Topic 1</TextBlock>
+        <TextBlock >Blog's Main Topic 2</TextBlock>
+        <TextBlock>Blog's Main Topic 3</TextBlock>
+        <TextBlock>Associated blogs</TextBlock>
+        <TextBlock DockPanel.Dock="Right" TextAlignment="Right">RSS</TextBlock>
+    </DockPanel>
+    
+    <StackPanel Grid.Row = "1"
+                Grid.Column = "0"
+                Orientation="Vertical"
+                Background="#738385">
+    <TextBlock TextWrapping="Wrap">Duis tincidunt nibh non risus volutpat, id maximus sapien varius. Morbi aliquet eros sit amet blandit efficitur. Aliquam eget vehicula mi, sit amet porta libero. Aenean facilisis finibus nibh, at rhoncus ex hendrerit vel. Nulla sed magna ac nisl feugiat venenatis. Praesent tortor ligula, vestibulum sit amet arcu ut, bibendum porta sapien. Sed finibus pulvinar dolor faucibus tempus. Quisque at malesuada nibh, eu accumsan ante. Nulla mattis quis quam non sollicitudin. Aliquam semper eu urna vitae sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus sed libero a quam faucibus condimentum ac non justo. In hac habitasse platea dictumst. Donec a leo vitae ex facilisis ultricies vel at purus. Nunc eu dapibus lorem. Aenean molestie diam at augue scelerisque gravida.</TextBlock>
+    
+    <Image Source="resm:Avalonia.Skia.Assets.NoiseAsset_256X256_PNG.png?assembly=Avalonia.Skia"
+             Height="300"
+             Width="300"
+             Stretch="Uniform"
+             HorizontalAlignment="Center">
+    </Image>
+
+    <DockPanel Grid.Row="2"
+				   Grid.ColumnSpan="2"
+				   Background="White">
+        <TextBlock DockPanel.Dock="Left">Tags: </TextBlock>
+        <TextBlock DockPanel.Dock="Left">Tag1</TextBlock>
+        <TextBlock DockPanel.Dock="Left">Tag2</TextBlock>
+        <TextBlock DockPanel.Dock="Left">Tag3</TextBlock>
+        <TextBlock DockPanel.Dock="Left">Tag4</TextBlock>
+        <TextBlock DockPanel.Dock="Right" TextAlignment="Right">Rate the Article:  4/5</TextBlock>
+      </DockPanel>
+    </StackPanel>
+
+    <StackPanel Grid.Row = "1"
+                Grid.Column = "1"
+                Background="#a19293"
+                Orientation="Vertical">
+    <TextBlock TextWrapping="Wrap"> Nullam non ante consequat, scelerisque odio et, tristique nulla. Pellentesque orci ex, molestie id eleifend nec, eleifend ac dui. Donec faucibus est at diam luctus, et pulvinar augue ullamcorper. Sed placerat sagittis dolor, sit amet sagittis sem vehicula ac. Ut cursus, dui nec ultrices consequat, nunc risus aliquam dolor, imperdiet dignissim mi velit vel urna. Sed hendrerit at diam eget faucibus. Sed vel accumsan diam, id pellentesque nisl. Praesent rutrum tempor massa, sit amet efficitur erat aliquam a. Fusce convallis vel tortor eu blandit. Nam ultricies eros eu dolor pulvinar hendrerit. Nunc id venenatis eros. Donec finibus eros eget felis consequat, ut tempor eros posuere. Etiam ut ligula urna. Praesent a blandit elit, vitae hendrerit metus. Etiam tempus, sem eu semper ultrices, neque lacus interdum sapien, at tempus nulla nisi sit amet nisi.</TextBlock>
+    <TextBlock DockPanel.Dock="Right" TextAlignment="Right">More</TextBlock>
+    <TextBlock DockPanel.Dock="Right" TextAlignment="Right">1 week ago</TextBlock>
+    </StackPanel>
+    </Grid>
+</Window>
